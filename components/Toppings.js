@@ -20,7 +20,7 @@ const Toppings=({toppings})=>{
             <div className={styles.toppings}>
             {toppings.items.map((topping)=>(
 
-                <div className={styles.options}>
+                <div key={topping} className={styles.options}>
                     <input type={inputType} id={topping.name} name={topping.name}/>
                     <label htmlFor={topping.name}>{topping.name}</label>
 
