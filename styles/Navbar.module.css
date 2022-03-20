@@ -1,0 +1,84 @@
+.container{
+    height:100px;
+    padding: 50px 50px;
+    background-color: var(--red);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    z-index: 999;
+}
+
+.item{
+    flex:1;
+    display:flex;
+    align-items: center;
+}
+.item:nth-child(2){
+    flex:3;
+    justify-content: space-around;
+}
+
+.item:last-child{
+   
+   justify-content: flex-end;
+   color:white
+   
+}
+
+.callButton{
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding:10px;
+}
+
+.texts{
+    margin-left: 20px;
+    color:white;
+}
+
+.text:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text:last-child{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Satisfy', cursive;
+    transform: rotate(-3deg);
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    
+    list-style: none;
+    color:white;
+}
+.listItem{
+    margin:20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart{
+    position:relative;
+    cursor: pointer;
+}
+
+.counter{
+    position:absolute;
+    color:#dd1919;
+    font-weight: bold;
+    top:-10px;
+    right:-10px;
+    width:20px;
+    height:20px;
+    padding:0px 5px;
+    border-radius: 50%;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

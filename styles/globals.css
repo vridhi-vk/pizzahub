@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Satisfy&display=swap');
+
+:root {
+  --red: #b00;
+  --blue: #00b;
+  --darkgray:#222;
+  --lightgray:#999;
+  --gold:#b7903c;
+  --fullwidth: 100%;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
 }
 
 a {
