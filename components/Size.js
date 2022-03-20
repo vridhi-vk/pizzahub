@@ -20,7 +20,7 @@ const Size=({size})=>{
             <div className={styles.sizes}>
             {size.items.map((item)=>(
 
-                <div className={styles.options}>
+                <div key={size} className={styles.options}>
                     <input type={inputType} id={item.size} name={item.size}/>
                     <label htmlFor={item.size}>{item.size}</label>
 
@@ -29,8 +29,6 @@ const Size=({size})=>{
             ))}
 
             </div>
-
-            
             
             </div>
 

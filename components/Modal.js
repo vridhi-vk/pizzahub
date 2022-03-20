@@ -39,7 +39,7 @@ const Modal = ({ show, onClose, children}) => {
               
               {children.toppings.map((topping)=>(
                   
-                    <Toppings toppings={topping}/>
+                    <Toppings key={children.id} toppings={topping}/>
                   ))
               }
             </div>
@@ -58,7 +58,7 @@ const Modal = ({ show, onClose, children}) => {
               
               {children.size.map((size)=>(
                   
-                    <Sizes size={size}/>
+                    <Sizes key={children.id} size={size}/>
                   ))
               }
             </div>

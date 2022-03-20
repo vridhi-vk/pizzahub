@@ -6,7 +6,7 @@ import PizzaCard from './PizzaCard'
 const PizzaList=({pizzas})=>{
     return(
         <div className={styles.container}>
-            <h1 className={styles.title}> Today's Menu </h1>
+            <h1 className={styles.title}> Today&apos;s Menu </h1>
 
             <div className={styles.wrapper}>
 
