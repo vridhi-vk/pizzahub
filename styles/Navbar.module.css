@@ -82,3 +82,21 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width:640px) {
+    .item:nth-child(2) {
+      display: none;
+    }
+  
+    .item:nth-child(1) {
+      flex: 3;
+    }
+  }
+@media screen and (max-width:1030px) {
+
+    
+        .text:first-child{
+            font-size: 1.1em;
+        }
+    
+}

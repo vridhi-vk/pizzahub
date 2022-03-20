@@ -102,3 +102,11 @@
     display:flex;
     justify-content: space-around;
 } */
+
+@media screen and (max-width: 640px) {
+    .modal {
+      margin: 20px;
+    }
+  
+
+  }

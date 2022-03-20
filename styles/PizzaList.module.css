@@ -19,3 +19,14 @@
 .title{
     font-family: 'Satisfy', cursive;
 }
+
+@media screen and (max-width: 640px) {
+    .title {
+      text-align: center;
+    }
+  
+    .desc {
+      width: 90%;
+      text-align: center;
+    }
+  }
