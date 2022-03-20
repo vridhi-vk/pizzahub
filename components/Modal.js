@@ -4,14 +4,24 @@ import Image from 'next/image'
 import Toppings from "./Toppings";
 import Sizes from "./Size";
 import styles from "../styles/Modal.module.css"
+import { useDispatch } from "react-redux";
+import { addSinglePizza } from "../redux/cartSlice";
 
 
 const Modal = ({ show, onClose, children}) => {
   const [isBrowser, setIsBrowser] = useState(false);
+  const [price, setPrice] = useState(children.price);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
+
+  const handleClick=(e)=>{
+    
+    dispatch(addSinglePizza({...children,price}));
+    handleCloseClick(e);
+  };
 
   const handleCloseClick = (e) => {
     e.preventDefault();
@@ -70,7 +80,7 @@ const Modal = ({ show, onClose, children}) => {
          </div> */}
          <div className={styles.footer}>
 
-              <button onClick={handleCloseClick}>
+              <button onClick={handleClick}>
                   + ADD
                 </button>
 

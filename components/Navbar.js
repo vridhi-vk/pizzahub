@@ -1,10 +1,12 @@
 import styles from "../styles/Navbar.module.css"
 import Image from 'next/image'
 // import {FaPhoneAlt} from 'react-icons/fa'
+import { useSelector } from "react-redux";
 import Link from 'next/link'
 import {FiShoppingCart} from 'react-icons/fi'
 
 const Navbar=()=>{
+    const quantity = useSelector((state) => state.cart.quantity);
     return(
         <div className={styles.container}>
             <div className={styles.item}>
@@ -35,7 +37,7 @@ const Navbar=()=>{
             <div className={styles.item}>
                 <div className={styles.cart}>
                     <FiShoppingCart style={{ fontSize: '40px'}}/>
-                    <div className={styles.counter}>2</div>
+                    <div className={styles.counter}>{quantity}</div>
                 </div>
                 
             </div> 
