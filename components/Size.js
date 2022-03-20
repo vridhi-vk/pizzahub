@@ -10,7 +10,7 @@ const Size=({size})=>{
         {
             setInputType("radio")
         }
-    })
+    },[size.isRadio])
 
 
     return(

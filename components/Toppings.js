@@ -10,7 +10,7 @@ const Toppings=({toppings})=>{
         {
             setInputType("radio")
         }
-    })
+    },[toppings.isRadio])
 
 
     return(
