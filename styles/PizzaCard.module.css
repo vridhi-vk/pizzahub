@@ -1,15 +1,12 @@
 .container{
     width:30%;
-    /* border-radius: 10%; */
-    /* box-shadow: 5px 10px #8888; */
     background: #eee;
     box-shadow: 0 5px 10px #99968e;
     margin:20px;
     display:flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     padding:40px 40px;
+    /* height:500px; */
     cursor: pointer;
 }
 .img{
@@ -25,16 +22,20 @@
 .name{
     display:flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color:var(--red);
 }
 
 .name span{
+    display:flex;
+    justify-content: flex-end;
     color:var(--darkgray);
+    width:25%;
+    font-size: 15px;
 }
 .price{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color:#666;
 }
@@ -60,25 +61,35 @@
 }
 
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 900px) {
     .container {
-      width: 100%;
-      padding:20px 40px;
+    
+      width: 40%;
+      padding:20px 20px;
+    }
+    .title{
+        font-size: 15px;
+        }
+    .price{
+            font-size: 15px;
+    }
+    .name span{
+            font-size: 13px;
     }
   
-    .title {
-      font-size: 30px;
-    }
-  
-    .price,
-    .desc {
-      font-size: 24px;
-    }
+    
   }
 
-  @media screen and(max-width:800px)
-{
-    .container{
-        width:40%;
+
+   @media screen and (max-width: 540px) {
+      .container{
+          width:80%;
+      }
+    
     }
+    @media screen and (max-width: 425px) {
+        .container{
+            width:100%;
+        }
 }

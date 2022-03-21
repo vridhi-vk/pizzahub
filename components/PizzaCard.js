@@ -10,7 +10,7 @@ const PizzaCard=({pizza})=>{
     const [showModal, setShowModal] = useState(false);
     return(
         <div className={styles.container}>
-            <Image className={styles.img} src={pizza.img_url} alt="pizza" width="100%" height="200px"/>
+            <Image className={styles.img} src={pizza.img_url} alt="pizza"  width="100%" height="170px"/>
             <h1 className={styles.name}>{pizza.name}<span><FaStar color="var(--gold)"/> {pizza.rating}</span></h1>
             <span className={styles.price}>Rs. {pizza.price}</span>
             <p className={styles.desc}>{pizza.description}</p>
