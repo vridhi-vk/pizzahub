@@ -11,7 +11,7 @@
 }
 .item:last-child{
     flex:2;
-    padding: 40px;
+    padding: 30px;
     justify-content: space-between;
 }
 .motto{
@@ -27,7 +27,7 @@
 
 .title{
     font-size: 15px;
-    color:var(--gold);
+    color:var(--primary);
 }
 
 .text{
@@ -45,13 +45,7 @@
   
     .item {
       flex-direction: column;
+      padding:20px;
     }
   
-    .title {
-      font-size: 30px;
-    }
-  
-    .text {
-      font-size: 20px;
-    }
   }

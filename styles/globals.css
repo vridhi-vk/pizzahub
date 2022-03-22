@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Satisfy&display=swap');
 
 :root {
-  --red: #b00;
+  /* --red: rgb(65, 26, 3); */
+  --primary:#f45e1d;
   --blue: #00b;
   --darkgray:#222;
   --lightgray:#999;
